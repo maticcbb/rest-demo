@@ -5,10 +5,13 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import java.util.Objects;
 
+// Adnotacja oznacza że jest encja czyli klase którą będziemy mapowac
 @Entity
 public class User {
 
+    // adnotacja oznacza że ta zmienna jest naszym Id
     @Id
+    // adnotacja oznacza że automatycznie generuje nasze id i nie trzeba go określać
     @GeneratedValue
     private long id;
     private String lastname;
