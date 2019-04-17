@@ -14,7 +14,10 @@ public class User {
     private String lastname;
     private String firstname;
 
-    public User(String firstname,String lastname ) {
+    public User() {
+    }
+
+    public User(String firstname, String lastname ) {
         this.lastname = lastname;
         this.firstname = firstname;
     }
@@ -30,5 +33,17 @@ public class User {
     @Override
     public int hashCode() {
         return Objects.hash(id);
+    }
+
+    public String getLastname() {
+        return lastname;
+    }
+
+    public String getFirstname() {
+        return firstname;
+    }
+
+    public long getId() {
+        return id;
     }
 }
